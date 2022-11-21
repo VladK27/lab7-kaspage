@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style-header.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>KAS</title>
 </head>
+
+
 <body>
     <header id="header">
         <div id="upper-header">
         <div id="header-logo">
             <img alt="KAS" title="KAS" src="images/header-logo.jpg">
         </div>
-        <nav id="header-nav">
-            <a class="header-nav-el">Check price</a>
-            <a class="header-nav-el">Arts</a>
-        </nav>
-        <div id="search-nav"></div>
+        <div id="nav-search-container">
+            <nav id="header-nav">
+                <button id="price" class="header-nav-el" href="#">Check price</button>
+                <button id="arts" class="header-nav-el" href="#" >Arts</button>
+            </nav>
+        <div id="search-nav"><input type="text" placeholder="Search"></div>
+        </div>
         </div>
         <div id="down-header">
             
         </div>
     </header>
+
     <main id="main-content">
         <section id="info-about-artist">
             <article class="article info">
                 <h2>Title</h2>
                 TEXT
             </article>
+            <img alt="" title="" src="" id="about-image">
         </section>
         <section id="pricelist">
             <article class="article pricelist">
                 <h2>Title</h2>
                 TEXT
             </article>
-            <div id="pricelist-art"><img src=""></div>
+            <div id="pricelist-art"><img alt="Pricelist" title="Pricelist" src=""></div>
         </section>
         <section id="examples-of-arts">
             <div class="examples" id="example01">
@@ -47,6 +55,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <address id="contacts">
             <div id="contacts-artist"></div>

@@ -2,8 +2,9 @@
     border:solid rgb(85, 108, 115) 0.3px;
 }
 body{
-    background-color: #d2ceeb;
-    width:97%;
+
+    margin:0;
+    background-color: #312d54;
     height: auto;
     display: grid;
     grid-template-rows: 270px auto 100px;
@@ -28,6 +29,7 @@ body{
     top:0px;
     right:200px;
     display: flex;
+    border:none;
 }
 #header-nav button{
     display: inline;
@@ -41,10 +43,26 @@ body{
     text-align: center;
     background-color: #222038;
     line-height: 0.8em;
+    border:none;
+}
+#header-nav button:hover{
+    background-color: #171627;
+}
+.button-border{
+    display: block;
+    position: absolute;
+    top:20px;
+    border:none;
+}
+.button-border .left{
+    left:0px;
+}
+.button-border .right{
+    right:0px;
 }
 #header-logo{
     position: absolute;
-    top:9px;
+    top:12px;
     left:15px;
     display: inline;
     width:50px;
@@ -57,7 +75,7 @@ body{
 
 #nav-search-container{
     position: absolute;
-    right:50px;
+    right:10px;
     display: flex;
     justify-content: space-between;
     width:500px;

@@ -1,5 +1,10 @@
 #main-content{
+    margin: auto;
+    margin-top:50px;
     height:700px;
+    width:90%;
+    border:solid 40px #423d70;
+    background-color: #423d70;
 }
 #info-about-artist{
 

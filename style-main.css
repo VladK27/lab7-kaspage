@@ -6,9 +6,37 @@
     border:solid 40px #423d70;
     background-color: #423d70;
 }
-#info-about-artist{
-
+.info{
+    width: 90%;
+    margin:auto;
+    background-color: rgb(196, 193, 224);
+    border-radius: 20px;
 }
-.article .info{
+
+#info-about-artist{
+display: flex;
+}
+
+#info-about-artist article{
+    width:50%;
+    padding:10px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+#info-about-artist .info-text{
+    width:90%;
+    height:400px;
+}
+#info-image{
+    top:0;
+    width:50%;
     
+}
+#info-image img{
+
+    border-radius: 10px;
+    margin:5%;
+    width:90%;
 }

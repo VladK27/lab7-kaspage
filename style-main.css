@@ -1,7 +1,7 @@
 #main-content{
     margin: auto;
     margin-top:50px;
-    height:700px;
+    height:auto;
     width:90%;
     border:solid 40px #423d70;
     background-color: #423d70;
@@ -28,6 +28,7 @@ display: flex;
 #info-about-artist .info-text{
     width:90%;
     height:400px;
+    margin: auto;
 }
 #info-image{
     top:0;
@@ -39,4 +40,93 @@ display: flex;
     border-radius: 10px;
     margin:5%;
     width:90%;
+}
+.title{
+    margin-top:10px;
+}
+
+#pricelist-img{
+    width:90%;
+    height:300px;
+    border:solid black 1px;
+}
+
+#examples-of-arts{
+    padding:40px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.examples-container{
+    background-image: url(images/info-img.jpeg);
+    border-radius: 5px;
+    background-size: contain;
+    display: block;
+    width:200px;
+    height:200px;
+    position: relative;
+    
+}
+#example01{margin-right:40px}
+#example02{margin-left:40px}
+.example{
+    width:200px;
+    height:200px;
+    border:solid black 1px;
+    border-radius: 5px;
+
+}
+.ex{
+    position: relative;
+    bottom: 630px;
+    background-color: white;
+    display: none;
+    border:white 20px solid;
+    border-top:40px white solid;
+    border-bottom:40px white solid;
+    width:630px;
+    height:630px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 1;
+}
+#ex1{
+    left:70px;
+}
+#ex2{
+    right:630px;
+}
+.examples-container:hover #ex1{
+    display: flex;
+    animation: examples-appear1 linear 0.25s forwards;
+}
+.examples-container:hover #ex2{
+    display: flex;
+    animation: examples-appear2 linear 0.25s forwards;
+}
+
+@keyframes examples-appear1 {
+    0% {
+        bottom:0;
+        left:200px;
+        transform: scaleY(0.4);
+        opacity: 0;
+    }
+    100%{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes examples-appear2 {
+    0% {
+        bottom:0;
+        transform: scaleY(0.4);
+        opacity: 0;
+    }
+    100%{
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }

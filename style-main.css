@@ -26,9 +26,14 @@ display: flex;
     color: rgb(0, 0, 0);
 }
 #info-about-artist .info-text{
-    width:90%;
+    width:80%;
     height:400px;
     margin: auto;
+    text-align: center;
+    font-family: Arvo, serif;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(5, 0, 26);
 }
 #info-image{
     top:0;
@@ -42,7 +47,12 @@ display: flex;
     width:90%;
 }
 .title{
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
     margin-top:10px;
+    font-weight: bold;
 }
 
 #pricelist-img{
@@ -92,41 +102,36 @@ display: flex;
     z-index: 1;
 }
 #ex1{
-    left:70px;
+    left:-150px;
 }
 #ex2{
-    right:630px;
+    left:-330px;
 }
 .examples-container:hover #ex1{
+    position: relative;
     display: flex;
     animation: examples-appear1 linear 0.25s forwards;
 }
 .examples-container:hover #ex2{
+    position: relative;
     display: flex;
     animation: examples-appear2 linear 0.25s forwards;
 }
 
 @keyframes examples-appear1 {
     0% {
-        bottom:0;
-        left:200px;
-        transform: scaleY(0.4);
         opacity: 0;
     }
     100%{
-        transform: scaleY(1);
         opacity: 1;
     }
 }
 
 @keyframes examples-appear2 {
     0% {
-        bottom:0;
-        transform: scaleY(0.4);
         opacity: 0;
     }
     100%{
-        transform: scaleY(1);
         opacity: 1;
     }
 }

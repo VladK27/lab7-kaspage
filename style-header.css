@@ -46,6 +46,7 @@ body{
 }
 #header-nav button:hover{
     background: linear-gradient(to bottom, #0e0e0e, #000000);
+    color:#dca5a5;
 }
 .button-border{
     display: block;

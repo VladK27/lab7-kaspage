@@ -1,28 +1,36 @@
 #main-content{
     margin: auto;
-    margin-top:50px;
-    height:auto;
-    width:90%;
-    border:solid 40px #423d70;
-    background-color: #423d70;
+    margin-top: 50px;
+    height: auto;
+    width: 90%;
+    border: solid 40px #26252a;
+    background: #26252a;
 }
 .info{
+    box-shadow: 0px 0px 10px 1vw rgb(0 0 0 / 30%);
     width: 90%;
-    margin:auto;
-    background-color: rgb(196, 193, 224);
+    margin: auto;
+    background-color: rgb(115 115 115);
     border-radius: 20px;
 }
+
 
 #info-about-artist{
 display: flex;
 }
-
+.line{
+    width:80%;
+    border:none;
+    border-top:#000000 solid 2px;
+    box-shadow: rgb(0, 0, 0, 0.3) 1px 1px;
+}
 #info-about-artist article{
     width:50%;
     padding:10px;
     font-family: "Roboto Slab", serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 8.1vw;
+    white-space: normal;
     color: rgb(0, 0, 0);
 }
 #info-about-artist .info-text{
@@ -100,6 +108,9 @@ display: flex;
     justify-content: space-between;
     border-radius: 10px;
     z-index: 1;
+}
+.info-text p{
+    font-style: italic;
 }
 #ex1{
     left:-150px;

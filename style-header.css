@@ -11,7 +11,7 @@ body{
 #header{
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     height: 370px;
 }
 #upper-header{
@@ -45,8 +45,7 @@ body{
     border:none;
 }
 #header-nav button:hover{
-    background: linear-gradient(to bottom, #0e0e0e, #000000);
-    color:#dca5a5;
+    animation: button-nav linear 0.2s forwards;
 }
 .button-border{
     display: block;
@@ -100,12 +99,22 @@ body{
     width:150px;
     border:none;
 }
-
-#down-header{
-    width: 100%;
+#header{
+    max-width: 100%;
+    overflow: hidden;
+}
+#down-header img{
+    position: relative;
+    margin: auto;
     height: 220px;
-    background-image: url(images/down-header.jpg);
-    background-position: top;
-    background-size: 1500px;
-    background-repeat: no-repeat;
+}
+@keyframes button-nav{
+    0%{
+        color:#ffffff;
+        background: linear-gradient(to bottom, #000000, #000000);
+    }
+    100%{
+        background: linear-gradient(to bottom, #0e0e0e, #000000);
+        color:#ff9696;
+    }
 }

@@ -1,4 +1,5 @@
 #main-content{
+    border-radius: 5px;
     margin: auto;
     margin-top: 50px;
     height: auto;
@@ -19,7 +20,7 @@
 display: flex;
 }
 .line{
-    width:80%;
+    width:85%;
     border:none;
     border-top:#000000 solid 2px;
     box-shadow: rgb(0, 0, 0, 0.3) 1px 1px;
@@ -128,6 +129,47 @@ display: flex;
     display: flex;
     animation: examples-appear2 linear 0.25s forwards;
 }
+#button-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#priceListButton{
+    display: inline;
+    width:300px;
+    height:70px;
+    color: #f7f5fa;
+    font-family: Nagomi;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: center;
+    background-color: #000000;
+    line-height: 0.8em;
+    border:none;
+    border-radius: 35px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    
+}
+#priceListButton:hover{
+    animation: button-price linear forwards 0.1s;
+    color: #ff9696;
+    
+    
+}
+#arrow{
+    position: relative;
+    height: 40px;
+    top:10px;
+    right:-10px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid rgb(0, 0, 0);
+    transform-origin:20px 70px;
+}
+#pricelist{
+    display: none;
+}
 
 @keyframes examples-appear1 {
     0% {
@@ -144,5 +186,38 @@ display: flex;
     }
     100%{
         opacity: 1;
+    }
+}
+@keyframes button-price{
+    0%{
+        color:#ffffff
+    }
+    100%{
+        color:#ff9696;
+    }
+}
+@keyframes arrowRotateNormal{
+    0%{
+        rotate: 0;
+    }
+    50%{
+        rotate: 90deg;
+    }
+    100%{
+        rotate: 180deg;
+        animation-timing-function: ease-out;
+    }
+}
+@keyframes arrowRotateReverse{
+    0%{
+        rotate: 180deg;
+        
+    }
+    50%{
+        rotate: 90deg;
+    }
+    100%{
+        rotate: 0;
+        animation-timing-function: ease-out;
     }
 }

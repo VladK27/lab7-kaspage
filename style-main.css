@@ -131,6 +131,16 @@ display: flex;
     display: flex;
     animation: examples-appear2 linear 0.25s forwards;
 }
+#title-pricelist{
+    text-align: center;
+    margin:auto;
+    margin-top:30px;
+    font-family: Nagomi;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: center;
+}
 #button-container{
     width:200px;
     margin-left:auto;
@@ -173,22 +183,13 @@ display: flex;
 #flower img{
     width:30px;
     height: 30px;
+    border-radius: 15px;
 }
-#arrow{
-    position: relative;
-    bottom:100px;
-    width: 0;
-    right:-60px;
-    height: 0px;
-    float: right;
-    border: 20px solid transparent;
-    border-bottom: 20px solid rgb(0, 0, 0);
-    transform-origin:20px 70px;
-    animation: flowerRolling1 5s linear;
-}
+
 #pricelist{
     display: none;
 }
+
 
 
 @keyframes examples-appear1 {
@@ -216,46 +217,12 @@ display: flex;
         color:#ff9696;
     }
 }
-@keyframes arrowRotateNormal{
-    0%{
-        rotate: 0;
-    }
-    50%{
-        rotate: 90deg;
-    }
-    100%{
-        rotate: 180deg;
-        animation-timing-function: ease-out;
-    }
+
+@keyframes flowerRollingNormal{
+    0%{rotate: 0deg;}
+    100%{rotate: 180deg;}
 }
-@keyframes arrowRotateReverse{
-    0%{
-        rotate: 180deg;
-        
-    }
-    50%{
-        rotate: 90deg;
-    }
-    100%{
-        rotate: 0;
-        animation-timing-function: ease-out;
-    }
-}
-@keyframes flowerRolling1{
-    0%{rotate: 0deg;
-    animation-timing-function: ease-out;}
-    25%{rotate: 90deg;}
-    50%{rotate: 180deg;}
-    75%{rotate: 270deg;}
-    100%{rotate: 360deg;
-    animation-timing-function: ease-in;}
-}
-@keyframes flowerRolling0{
-    0%{rotate: 0deg;
-    animation-timing-function: ease-out;}
-    25%{rotate: -90deg;}
-    50%{rotate: -180deg;}
-    75%{rotate: -270deg;}
-    100%{rotate: -360deg;
-    animation-timing-function: ease-in;}
+@keyframes flowerRollingReverse{
+    0%{rotate: 0deg;}
+    100%{rotate: -180deg;}
 }

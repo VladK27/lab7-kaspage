@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 #main-content{
     border-radius: 5px;
     margin: auto;
@@ -135,11 +136,29 @@ display: flex;
     text-align: center;
     margin:auto;
     margin-top:30px;
-    font-family: Nagomi;
+    font-family: "Bree Serif", serif;
     font-size: 2em;
     font-weight: 400;
     line-height: 1.5em;
     text-align: center;
+}
+#pricelist-imgs{
+    display: flex;
+    justify-content: center;
+    width:90%;
+    margin: auto;
+    
+}
+#pricelist-imgs img{
+    margin:auto;
+    border-radius: 10px;
+    width:90%;
+    box-shadow: rgb(0, 0, 0,0.3) 0px 0px 10px 1vw;
+}
+
+#pricelist{
+    display: none;
+    margin-bottom:30px;
 }
 #button-container{
     width:200px;
@@ -186,9 +205,24 @@ display: flex;
     border-radius: 15px;
 }
 
-#pricelist{
-    display: none;
+#links{
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
+.link-media{
+    margin: 30px;
+    width:50px;
+    height: 50px;
+}
+.link-media img:hover{
+    border-bottom: solid 1px black;
+}
+.link-media img{
+    width:50px;
+    height: 50px;
+}
+
 
 
 

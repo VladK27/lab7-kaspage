@@ -30,6 +30,9 @@ body{
     display: flex;
     border:none;
 }
+#header-nav a{
+    text-decoration: none;
+}
 #header-nav button{
     display: inline;
     width:100px;
